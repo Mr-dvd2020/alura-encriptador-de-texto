@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color-primaria: #F3F5FC;
+    --color-secundaria: #0a3871;
+    --color-terciaria: #ffae00;
+    --color-hover: #ffae00;
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primaria);
+    color: var(--color-secundaria);
+}
+/*estilos del content principal*/
+.content {
+    display: flex;
+    padding: 5% 15%;
+    height: 100%;
+}
+/*estilos del content encriptar*/
+.presentacion__encriptar {
+    flex: 0 0 70%; /* Ocupa el 70% del ancho */
+    padding: 50px;
+    box-sizing: border-box;
+    height: 80vh;
+}
+
+/*estilos del content encriptado*/
+.presentacion__encriptado {
+    
+    flex: 0 0 30%; /* Ocupa el 30% del ancho */
+    padding: 10px;
+    top: 5px;
+    box-sizing: border-box;
+    height: 80vh;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.encriptado
+/*estilo de toxtos*/
+.texto{
+    position:relative;
+    height: 100%;
+    width: 100%;
+    background-color:#F3F5FC;
+    border: none;
+    font-family: georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    
+}
+
+.texto::placeholder{
+    color: #0a3871;
+}
+.texto:focus, .texto:active{
+    border: none;
+    outline: none;
+}
+
+/*estilo a los terminos*/
+.terminos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: absolute;
+    width: 80%;
+    top: 80%;
+    color: #0a3871;
+}
+.terminos p{ 
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+/*estilo de botones*/
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    padding: 1% 0;
+    gap: 24px;
+}
+
+.btn-encriptar{
+    padding: 2%;
+    
+    width: 50%;
+    background-color: #0a3871;
+    border-radius: 24px;
+    border: 1px solid #0a3871;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn-desencriptar{
+    box-sizing: border-box;
+    padding: 2%;
+    
+    width: 50%;
+    background-color: #D8DFE8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+}
+.btn-encriptar:hover, .btn-desencriptar:hover{
+    margin: 0.1%;
+    width: 49.9%;
+    padding: 1.9%;
+}
