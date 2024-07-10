@@ -9,8 +9,9 @@ function encriptar(){
     let tutuloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
     let muneco = document.getElementById("dibujo");
-    if(texto.value.length !=0){
+    if(texto.length !=0){
         document.getElementById("texto").value=textoCifrado;
+        document.getElementById("mensaje").value=textoCifrado
         tutuloMensaje.textContent = "Texto encriptado con éxito";
         parrafo.textContent= "";
         muneco.style.display = "none";
@@ -22,4 +23,5 @@ function encriptar(){
         alert("Debes Igresar algún texto");
     }
 }
+
 
