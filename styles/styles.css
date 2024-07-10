@@ -75,6 +75,36 @@ body{
     outline: none;
 }
 
+.mensaje{
+    position:absolute;
+    
+    width: 20%;
+    top: 10%;
+    background-color:#FFFFFF;
+    border: none;
+    font-family: georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    display: none; /* Inicialmente oculto */
+    
+}
+.mensaje::placeholder{
+    color: #0a3871;
+}
+.mensaje:focus, .mensaje:active{
+    border: none;
+    /*outline: none;*/
+}
+#mensaje {
+    order: -1; /* Esto asegura que el textarea aparezca primero */
+}
+
+.mensaje-encriptado {
+    order: 1;
+}
+
 .mensaje-encriptado h2 {
     width: 60%;
     font-family: "Inter";
@@ -205,6 +235,21 @@ body{
     }
     .mensaje-encriptado{
         margin-top:20vh;
+    }
+
+    .mensaje{
+        position:relative;
+        width: 90%;
+        background-color:#FFFFFF;
+        border: none;
+        font-family: georgia;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+
+        display: none; /* Inicialmente oculto */
+        
     }
 }
   
