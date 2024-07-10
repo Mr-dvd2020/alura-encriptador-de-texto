@@ -19,13 +19,13 @@ body{
 /*estilos del content principal*/
 .content {
     display: flex;
-    padding: 5% 15%;
+    padding: 4% 10%;
     height: 100%;
 }
 /*estilos del content encriptar*/
 .presentacion__encriptar {
     flex: 0 0 70%; /* Ocupa el 70% del ancho */
-    padding: 50px;
+    padding: 20px;
     box-sizing: border-box;
     height: 80vh;
 }
@@ -34,16 +34,24 @@ body{
 .presentacion__encriptado {
     
     flex: 0 0 30%; /* Ocupa el 30% del ancho */
-    padding: 10px;
+    
     top: 5px;
     box-sizing: border-box;
     height: 80vh;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
+    overflow: hidden; /* Asegura que la imagen no desborde el contenedor */
+}
+.mensaje-encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 55vh;
 }
 
-.encriptado
 /*estilo de toxtos*/
 .texto{
     position:relative;
@@ -66,6 +74,28 @@ body{
     border: none;
     outline: none;
 }
+
+.mensaje-encriptado h2 {
+    width: 60%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343a40;
+  }
+
+  .mensaje-encriptado p {
+    width: 80%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+  }
 
 /*estilo a los terminos*/
 .terminos{
@@ -132,3 +162,49 @@ body{
     width: 49.9%;
     padding: 1.9%;
 }
+/*estilos a imagen de encripatado*/
+.presentacion__encriptado img {
+    position: absolute;
+    width: 24%;
+    height: 40%;
+    top: 20%;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Estilos responsivos para móviles */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        padding: 2% 5%;
+    }
+    .presentacion__encriptar, .presentacion__encriptado {
+        flex: 0 0 100%;
+        height: auto;
+    }
+    .botones{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 20px;
+    }
+    .btn-encriptar, .btn-desencriptar {
+        width: 100%;
+        padding: 5%;
+    }
+    .btn-encriptar:hover, .btn-desencriptar:hover {
+        width: 100%;
+        padding: 4.9%;
+    }
+    .presentacion__encriptado img {
+        position: relative;
+        width: 100%;
+        top: 10vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .mensaje-encriptado{
+        margin-top:20vh;
+    }
+}
+  
